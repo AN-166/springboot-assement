@@ -1,0 +1,6 @@
+CREATE TABLE users (
+    id BIGINT IDENTITY PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    created_at DATETIME2 DEFAULT GETDATE()
+);
